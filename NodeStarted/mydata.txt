@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h1 style="color:green">HTML elements</h1>
+        Gender
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <BR>
+        <select>
+            <option>VN</option>
+            <option>Thailand</option>
+        </select>
+        <br>
+        <input type="button" value="Ok"/>
+    </body>
+<html>
