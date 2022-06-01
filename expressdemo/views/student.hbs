@@ -8,12 +8,20 @@
 </head>
 <body>
     <h1 style="color:blue">Student page</h1>
+    
+    <form action="/registerLunch" method="post">
+        Name : <input type="text" name="txtName">
+        <br>
+        Choosing Food 
+        <select name="food">
+            {{#each foods}}
+                <option value="{{this}}">{{this}}</option>
+            {{/each}}
+        </select>
+        <br>
+        <input type="submit" value="Dang ky!">
+    </form>
+    <hr>
     <a href="/">Main page</a>
-    <ul>
-         {{#each foods}}
-            <li>{{this}}</li>
-        {{/each}}
-    </ul>
-   
 </body>
 </html>

@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Thank you</title>
 </head>
 <body>
-    <h1>This is home page for</h1>
-    {{#each studentFood}}
-        * {{name}} - {{food}} <br>
-    {{/each}}
-    <hr>
-    <a href="/student">Student Page</a>
-    <hr>
-   
+    <h2 style="color:green">Thank you {{user.name}}. Ban da chon {{user.food}}!</h2>
+    <a href="/student">Back to student</a>
 </body>
 </html>
