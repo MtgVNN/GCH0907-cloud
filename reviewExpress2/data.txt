@@ -1,2 +1,3 @@
 product1;ipad.jpg
-product2;vo ipad.jpg
+product2;vo ipad.png
+product2;vo ipad
