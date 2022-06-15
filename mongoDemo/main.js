@@ -6,6 +6,17 @@ app.use(express.urlencoded({extended:true}))
 
 var MongoClient = require('mongodb').MongoClient
 var url = 'mongodb://127.0.0.1/27017'
+
+app.get('/viewAll',async (req,res)=>{
+    //1. ket noi den server co dia chi trong url
+    let server = await MongoClient.connect(url)
+    //truy cap Database ATNToys
+    let dbo = server.db("ATNToys")
+    //get data
+    let products = await dbo.collection('product').find().toArray()
+    res.render('allProduct',{'products':products})
+})
+
 app.post('/newProduct', async (req,res)=>{
     let name = req.body.txtName
     let price = req.body.txtPrice
